@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> 
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="img/a.jpg" alt="Foto Profil" class="profile-pic">
+            <span>Reski Kara</span>
+        </div>
+        <nav class="nav-header">
+            <ul class="ul-header"> 
+                <li><a class="li-header" href="index.html">Home</a></li>
+                <li><a class="li-header" href="#about">Tentang</a></li>
+                <li><a class="li-header" href="#projects">Project</a></li>
+                <li><a class="li-header" href="#skills">Keahlian</a></li>
+                <li><a class="li-header" href="#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Halo, Saya RESKI KARA</h1>
+        <p>Cloud computing 4A</p>
+        <p>Web Developer | Designer | Freelancer</p>
+        <a href="#projects" class="btn">Lihat Projek Saya</a>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <h3><p>Halo! Nama saya Reski Kara, seorang mahasiswa IT yang sedang menempuh pendidikan di salah satu kampus swasta di Sulawesi Selatan. Saat ini, saya tengah fokus mempelajari Machine Learning dan aktif terlibat dalam berbagai proyek teknis.</p>
+        <p>Saya telah mengembangkan beberapa proyek, termasuk pembuatan website dan konfigurasi jaringan yang menantang. Tujuan utama saya adalah menjadi seorang programmer yang handal di bidang Machine Learning. Saya percaya bahwa teknologi ini memiliki potensi besar untuk mengubah dunia, dan saya bersemangat untuk mempelajari lebih dalam serta mengaplikasikan pengetahuan ini dalam solusi yang inovatif.</p>
+        <p>Dengan dedikasi untuk terus belajar dan mengeksplorasi teknologi baru, saya berharap dapat memberikan kontribusi yang berarti dalam industri teknologi di masa depan.</p>
+        </h3>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Project</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="img/project.jpg" alt="Project 1">
+                <h3>Sistem Sambutan Otomatis Pada Toko</h3>
+                <p>pembuatan sistem sambutan otomatis pada sebuah toko menggunakan mikrokontroler Arduino uno dengan  sensor  pendeteksi gerakan menggunakan sensor PIR</p>
+            </div>
+            <!-- Tambahkan lebih banyak kartu proyek sesuai kebutuhan -->
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Keahlian</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Pengembangan Web</h3>
+                <p>Berpengalaman dalam merancang dan mengembangkan website responsif menggunakan HTML, CSS, dan JavaScript. Mampu mengintegrasikan dan mengelola database menggunakan teknologi seperti MySQL dan MongoDB. Familiar dengan penggunaan framework seperti Bootstrap untuk mempercepat proses pengembangan.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Perancangan Jaringan</h3>
+                <p>Berpengalaman dalam merancang dan mengimplementasikan konfigurasi jaringan lokal. Memiliki pengetahuan mendalam tentang protokol jaringan seperti TCP/IP, DNS, dan DHCP. Kemampuan untuk mengelola dan memperbaiki masalah jaringan serta perangkat jaringan.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Bahasa Python</h3>
+                <p>Kompeten dalam menggunakan Python untuk analisis data, pengembangan aplikasi, dan implementasi Machine Learning. Pengalaman dengan framework dan library seperti Flask dan Django untuk pengembangan web backend.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Perbaikan Hardware</h3>
+                <p>Keahlian dalam memperbaiki perangkat keras seperti printer dan laptop. Mampu melakukan perbaikan seperti penggantian layar, baterai, RAM, keyboard, dan komponen lainnya.</p>
+            </div>
+            <!-- Tambahkan lebih banyak keahlian sesuai kebutuhan -->
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Kontak</h2>
+        <div class="section-contact">
+            <form action="mailto:reskikara@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 RESKI KARA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-header');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
